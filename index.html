@@ -245,8 +245,7 @@
 
             <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
               <!-- Starting of ajax contact form -->
-<!--    <form class="contact__form" method="post" action="contact_mail.php">-->
-		<form action="https://formspree.io/challenge.ale@gmail.it" method="POST" />
+    <form class="contact__form" method="post" name="input" action="https://formspree.io/challenge.ale@gmail.com">
       <!-- Element of the ajax contact form -->
       <div class="row">
           <div class="col-md-6 form-group">
@@ -268,9 +267,8 @@
               <input name="submit" type="submit" class="button-style" value="Invia Messagio">
           </div>
       </div>
-      
-
     </form>
+	  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 <!-- Ending of ajax contact form -->
   <!-- Starting of successful form message -->
       <div class="row">
